@@ -3,7 +3,7 @@ function hello() {
     alert(`Hello, ${name}! How are you?`);
 }
 
-// hello();
+hello();
 
 function showRow() {
     let row1 = prompt('Введите данные').trim();
@@ -12,7 +12,7 @@ function showRow() {
     alert(row2 + ' ' + row3 + ' ' + row1);
 }
 
-// showRow();
+showRow();
 
 
 
