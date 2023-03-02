@@ -39,16 +39,17 @@ let delElement = prompt('Введите символы, через запяту�
 
 function deleteCharacters(str, elemToRemove) {
     let elemToArr = elemToRemove.split(', ');
+    let newStr = str;
 
-    if (str.length === 0) {
+    if (newStr.length === 0) {
         return '';
     }
 
-    if (elemToArr.indexOf(str[0]) !== -1) {
-        return deleteCharacters(str.slice(1), elemToRemove);
+    if (elemToArr.indexOf(newStr[0]) !== -1) {
+        return deleteCharacters(newStr.slice(1), elemToRemove);
     }
 
-    return str[0] + deleteCharacters(str.slice(1), elemToRemove);
+    return newStr[0] + deleteCharacters(newStr.slice(1), elemToRemove);
 
 }
 

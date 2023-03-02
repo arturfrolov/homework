@@ -57,23 +57,41 @@ let users = [
 
 
 function filterUsersByBalance(arr) {
-    let newArrNumber= [];
+    let newArrNumber = [];
+
     arr.forEach((element, index) => {
         let newString = element.balance.replace('$', '');
         newString = newString.replace(',', '');
-        console.log(+newString);
         if (+newString > 2000) {
             newArrNumber[index] = element.phone;
-        } else {
-            newArrNumber.splice(index, 1);
         }
     });
-    console.log(newArrNumber);
+
+    newArrNumber = newArrNumber.filter(element => {
+       return element !== undefined;
+    });
+
+    return newArrNumber;
 }
 
-// console.log(filterUsersByBalance(users));
-filterUsersByBalance(users);
 
+
+function getSumBalance(arr) {
+    let sum= 0;
+
+    arr.forEach((element, index) => {
+        let newString = element.balance.replace('$', '');
+        newString = newString.replace(',', '');
+        sum += Number(newString);
+    });
+
+    return sum.toFixed(2);
+}
+
+
+
+console.log(filterUsersByBalance(users));
+console.log(getSumBalance(users));
 
 // Дан массив объектов. Вывести массив телефонных номеров пользователей,
 // имеющих баланс более 2000 долларов. И найти сумму всех балансов пользователей
