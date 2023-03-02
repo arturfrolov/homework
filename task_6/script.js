@@ -33,7 +33,6 @@ function calcArefmeticMean(arr) {
 
 
 
-
 let userString = prompt('Введите любую строку.');
 let delElement = prompt('Введите символы, через запятую и пробел, которые хотите удалить из этой строки.');
 
@@ -52,7 +51,6 @@ function deleteCharacters(str, elemToRemove) {
     return newStr[0] + deleteCharacters(newStr.slice(1), elemToRemove);
 
 }
-
 
 
 console.log(removeElement(array, 4));
