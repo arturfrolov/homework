@@ -14,7 +14,6 @@ setRandomImage();
 
 
 
-
 function pow (num, degree) {
     if (degree === 1) {
         return num;
