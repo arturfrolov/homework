@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <style>
+        .random_img {
+            display: block;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        .img_box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 500px;
+        }
+        .genere_img {
+            display: block;
+            margin: 20px auto;
+            padding: 15px 32px;
+            border: 2px solid #008CBA;
+            color: white;
+            background-color: #008CBA;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 4px;
+            transition: all 0.4s;
+        }
+        .genere_img:hover {
+            color: black;
+            background-color: white;
+        }
+        
+    </style>
+    <div class="img_box">
+        <img src="#" alt="img" class="random_img">
+        <button class="genere_img">random image</button>
+    </div>
+</body>
+</html>
