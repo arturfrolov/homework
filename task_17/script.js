@@ -1,5 +1,3 @@
-/* eslint-disable func-names */
-/* eslint-disable no-undef */
 $(document).ready(function () {
     const $modal = $('.js--modal');
     const $gallery = $('.gallery');
