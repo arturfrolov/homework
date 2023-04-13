@@ -58,32 +58,13 @@ document.querySelector('.Student1').addEventListener('click', () => {
         birthYear: 1998,
         grades: [56, 58, 99, 81, 51, 67, 88, 53, 89, 81, 81, 77, 68, 82, 99, 57, 100, 72, 59, 92, 50, 76, 63, 59, 93],
     });
-    vasya
-        .present()
-        .absent()
-        .present()
-        .present()
-        .present()
-        .absent()
-        .present()
-        .present()
-        .present()
-        .present()
-        .absent()
-        .present()
-        .present()
-        .absent()
-        .present()
-        .present()
-        .absent()
-        .present()
-        .absent()
-        .present()
-        .present()
-        .present()
-        .absent()
-        .absent()
-        .present();
+    for (let i = 0; i < 25; i++) {
+        if (i < 16) {
+            vasya.present();
+        } else {
+            vasya.absent();
+        }
+    }
 
     console.log('Age -', vasya.age());
     console.log('Average Grade -', vasya.averageGrade());
@@ -97,38 +78,18 @@ document.querySelector('.Student2').addEventListener('click', () => {
         birthYear: 2002,
         grades: [86, 88, 100, 89, 90, 90, 87, 91, 93, 98, 92, 93, 97, 92, 89, 92, 85, 100, 91, 94, 85, 86, 89, 85, 100],
     });
-    petro
-        .present()
-        .present()
-        .present()
-        .present()
-        .absent()
-        .present()
-        .present()
-        .present()
-        .present()
-        .present()
-        .present()
-        .present()
-        .present()
-        .present()
-        .present()
-        .present()
-        .present()
-        .present()
-        .present()
-        .present()
-        .present()
-        .present()
-        .absent()
-        .present()
-        .present();
+    for (let i = 0; i < 25; i++) {
+        if (i < 23) {
+            petro.present();
+        } else {
+            petro.absent();
+        }
+    }
 
     console.log('Age -', petro.age());
     console.log('Average Grade -', petro.averageGrade());
     console.log('Summary -', petro.summary());
 });
-
 
 document.querySelector('.Student3').addEventListener('click', () => {
     const sergey = new Student({
@@ -136,33 +97,14 @@ document.querySelector('.Student3').addEventListener('click', () => {
         surname: 'Gorelov',
         birthYear: 1995,
         grades: [92, 96, 87, 100, 86, 91, 99, 95, 88, 92, 88, 87, 87, 95, 85, 96, 91, 99, 86, 93, 97, 100, 92, 85, 98],
-});
-    sergey
-        .present()
-        .present()
-        .present()
-        .present()
-        .present()
-        .absent()
-        .present()
-        .present()
-        .present()
-        .present()
-        .present()
-        .present()
-        .present()
-        .present()
-        .present()
-        .present()
-        .absent()
-        .present()
-        .present()
-        .present()
-        .present()
-        .absent()
-        .present()
-        .present()
-        .present();
+    });
+    for (let i = 0; i < 25; i++) {
+        if (i < 22) {
+            sergey.present();
+        } else {
+            sergey.absent();
+        }
+    }
     console.log('Age -',sergey.age());
     console.log('Average Grade -', sergey.averageGrade());
     console.log('Summary -', sergey.summary());
